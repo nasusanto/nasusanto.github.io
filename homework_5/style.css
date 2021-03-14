@@ -30,12 +30,6 @@
     color: rgb(149,73,1);
 }
 
-/* change color to active/current link 
-.current-link {
-    color: rgb(149,73,1) !important;
-    text-decoration: underline !important;
-} */
-
 /* header/promo */
 .header{
     width: 100%;
@@ -44,7 +38,24 @@
     background-size: cover;
     background-position: 0px -450px;
     align-items: center;
-} 
+}  
+
+.promo{
+    color: white;
+    font-size: 64px;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.button{
+    font-size: 36px;
+    border: 2px solid #eba15c;
+    background: #eba15c;
+    margin-left: 32px;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
 
 .products-list {
     width: 100%;
