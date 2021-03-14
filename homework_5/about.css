@@ -1,0 +1,21 @@
+.pic-column, .team-info{
+    float: left;
+    width: 50%;
+    padding: 8px;
+    height: 500px;
+}
+
+.two-columns:after{
+    clear: both;
+}
+
+.team-pic{
+    width: 600px;
+    height: 570px;
+}
+
+.text{
+    font-size: 36px;
+    color: #954901;
+}
+
