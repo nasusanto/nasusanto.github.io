@@ -30,12 +30,7 @@
     color: rgb(149,73,1);
 }
 
-/* change color to active/current link 
-.current-link {
-    color: rgb(149,73,1) !important;
-    text-decoration: underline !important;
-} */
-
+/* css for the different bun flavors */
 .products-list {
     width: 100%;
     margin-top: 16px;
@@ -103,5 +98,6 @@
     height: auto;
 }
 
-
-
+.order-link{
+    text-decoration: none;
+}

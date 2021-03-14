@@ -1,13 +1,19 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
 /* setting up the 3 dividers */
 .images-column, .info-column, .product-column{
-    float: left;
+    position: relative;
     width: 33.33%;
     padding: 8px;
     height: 500px;
-}
-
-.three-columns:after{
-    clear: both;
 }
 
 /* first column images of bun */
@@ -27,7 +33,7 @@
 .name{
     color: #954901;
     font-size: 64px;
-
+    margin-top: 0;
 }
 
 .bun-info{
