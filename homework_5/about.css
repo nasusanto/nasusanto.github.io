@@ -1,21 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+/* setting up the 2 dividers */
 .pic-column, .team-info{
-    float: left;
-    width: 50%;
+    position: relative;
+    width: 47%;
     padding: 8px;
     height: 500px;
-}
-
-.two-columns:after{
-    clear: both;
+    display: inline-block;
 }
 
 .team-pic{
-    width: 600px;
+    width: 100%;
     height: 570px;
+    margin-top: 16px;
 }
 
 .text{
     font-size: 36px;
     color: #954901;
+    margin-top: 0;
 }
 
