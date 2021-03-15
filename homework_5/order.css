@@ -29,12 +29,19 @@ body{
     height: 90px;
 }
 
+/* spaced out small images */
+.original-small:not(:last-child){
+    margin-right:16px;
+}
+
+/* put small images in center */
 .small-images{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
 }
+
 
 /* second column information about bun */
 .name{
@@ -105,6 +112,7 @@ body{
     display: inline-block;
 }
 
+/* glazing boxes */
 .glazing-none{
     font-size: 24px;
     border: 2px solid #b06b29;
@@ -127,6 +135,8 @@ body{
     display: inline-block;
     margin: 5px;
 }
+
+/* checkout buttons */
 
 .add-to-cart{
     font-size: 36px;
