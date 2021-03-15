@@ -29,6 +29,13 @@ body{
     height: 90px;
 }
 
+.small-images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
 /* second column information about bun */
 .name{
     color: #954901;
@@ -55,9 +62,92 @@ body{
 .title{
     color: #954901;
     font-size: 36px;
+    margin-top: 0;
+}
+
+.title-quantity{
+    color: #954901;
+    font-size: 36px;
+    margin-top: 8px;
+}
+
+.title-glazing{
+    color: #954901;
+    font-size: 36px;
 }
 
 .price{
     color: #b06b29;
     font-size: 36px;
+}
+
+/* quantity boxes */
+.button-1roll{
+    font-size: 24px;
+    border: 2px solid #b06b29;
+    background: #b06b29;
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.button-rolls{
+    font-size: 24px;
+    border: 2px solid #b06b29;
+    margin-left: 0px;
+    color: #b06b29;
+    text-decoration: none;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.glazing-none{
+    font-size: 24px;
+    border: 2px solid #b06b29;
+    background: #b06b29;
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    margin: 5px;
+}
+
+.glazings{
+    font-size: 24px;
+    border: 2px solid #b06b29;
+    margin-left: 0px;
+    color: #b06b29;
+    text-decoration: none;
+    padding: 16px;
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.add-to-cart{
+    font-size: 36px;
+    border: 2px solid #b06b29;
+    background: #b06b29;
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.buy-now{
+    font-size: 36px;
+    border: 2px solid #954901;
+    background: #954901;
+    margin-left: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    margin-top: 16px;
+    text-align: center;
 }
