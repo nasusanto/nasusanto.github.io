@@ -16,12 +16,23 @@ body{
     height: 500px;
 }
 
+.back-button{
+    font-size: 18px;
+    border: 2px solid #eba15c;
+    background: #eba15c;
+    margin-left: 8px;
+    color: white;
+    text-decoration: none;
+    padding: 4px;
+}
+
 /* first column images of bun */
 .main-original{
     width: 100%;
     height: 480px;
     display: block;
     object-fit: cover;
+    margin-top: 16px;
 }
 
 .original-small{
