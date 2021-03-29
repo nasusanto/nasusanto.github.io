@@ -100,19 +100,12 @@ body{
 }
 
 /* quantity boxes */
-.button-1roll{
-    font-size: 24px;
-    border: 2px solid #b06b29;
-    background: #b06b29;
-    margin-left: 0px;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    position: relative;
-    display: inline-block;
+.button-roll-active {
+    background: #b06b29 !important;
+    color: white !important;
 }
 
-.button-rolls{
+.button-rolls {
     font-size: 24px;
     border: 2px solid #b06b29;
     margin-left: 0px;
@@ -121,18 +114,13 @@ body{
     padding: 16px;
     position: relative;
     display: inline-block;
+    cursor: pointer;
 }
 
 /* glazing boxes */
-.glazing-none{
-    font-size: 24px;
-    border: 2px solid #b06b29;
-    background: #b06b29;
-    margin-left: 0px;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    margin: 5px;
+.glazings-active {
+    background: #b06b29 !important;
+    color: white !important;
 }
 
 .glazings{
@@ -145,6 +133,7 @@ body{
     position: relative;
     display: inline-block;
     margin: 5px;
+    cursor: pointer;
 }
 
 /* checkout buttons */
@@ -159,6 +148,8 @@ body{
     padding: 16px;
     margin-top: 16px;
     text-align: center;
+    width: 100%;
+    cursor: pointer;
 }
 
 .buy-now{
