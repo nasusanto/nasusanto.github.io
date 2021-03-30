@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="order.css">
-        <script src="js/main.js"></script>
         <!--adding/linking ABeeZee font-->
         <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <script src="main.js"></script>
+        <script src="order.js"></script>
         <title>Order | Bun Bun Bakeshop</title>
     </head>
     <body> <!--navigation bar-->
@@ -22,8 +23,9 @@
                 <a href="contact.html">Contacts</a>
             </div>
             <div class="carticon">
+                <div id="cart-item-count"></div>
                 <img src="images/shopping-cart.png" alt="cart icon">
-            </div>    
+            </div>
         </div>
 
         <!--Back button from order page to menu-->
@@ -51,24 +53,23 @@
                 <!--Third column where user picks bun details-->
                 <div class="product-column">
                     <h2 class="title">Price</h2>
-                    <h3 class="price">$2.00</h3>
+                    <h3 class="price" data-price="2.00">$2.00/roll</h3>
                     <div class="quantity">
                         <h2 class="title-quantity">Quantity</h2>
-                        <a class="button-1roll">1 roll</a>
-                        <a class="button-rolls">3 rolls</a>
-                        <a class="button-rolls">6 rolls</a>
-                        <a class="button-rolls">12 rolls</a>
+                        <a class="button-rolls button-roll-active" data-qty="1">1 roll</a>
+                        <a class="button-rolls" data-qty="3">3 rolls</a>
+                        <a class="button-rolls" data-qty="6">6 rolls</a>
+                        <a class="button-rolls" data-qty="12">12 rolls</a>
                     </div>
                     <div class="glazing">
                         <h2 class="title-glazing">Glazing</h2>
-                        <a class="glazing-none">None</a>
-                        <a class="glazings">Sugar-milk</a>
-                        <a class="glazings">Vanilla-milk</a>
-                        <a class="glazings">Double-chocolate</a>
+                        <a class="glazings glazings-active" data-glazing="">None</a>
+                        <a class="glazings" data-glazing="Sugar-milk">Sugar-milk</a>
+                        <a class="glazings" data-glazing="Vanilla-milk">Vanilla-milk</a>
+                        <a class="glazings" data-glazing="Double-chocolate">Double-chocolate</a>
                     </div>
-                    <div class="add-to-cart">
-                        <a class="add-to-cart">Add to Cart</a>
-                    </div>
+                    <h3 class="total" data-total="0.00">Total: $<span id="total-price"></span></h3>
+                    <button onclick="add_to_cart();" class="add-to-cart">Add to Cart</button>
                     <div class="buy-now">
                         <a class="buy-now">Buy Now</a>
                     </div>
