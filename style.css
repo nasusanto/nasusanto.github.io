@@ -25,6 +25,18 @@
     align-items: center;
 }
 
+.cart-title{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    color: rgba(149,73,1,60%);
+    text-align: center;
+    font-size: 48px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
 /* change color of navbar links when hovering */
 .links a:hover{
     color: rgb(149,73,1);
