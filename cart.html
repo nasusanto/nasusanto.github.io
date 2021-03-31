@@ -12,26 +12,50 @@
         <title>Cart | Bun Bun Bakeshop</title>
     </head>
     <body> <!--navigation bar-->
-        <div class="navbar">
+        <header class="navbar">
             <div class="logo"><a href="index.html"><img src="images/logo.png" alt="bun bun logo"></a>
             </div>
-            <h1 class="cart-title">Cart (6 items)</h1>
+            <div class="cart-title">
+                <h1 class="cart-title-text">Cart (<span class="cart-item-count"></span> items)</h1>
             </div>
-            <div class="carticon">
-                <div id="cart-item-count"></div>
-                <img src="images/shopping-cart.png" alt="cart icon">
-            </div>
-        </div>
+        </header>
 
         
-        <div class="main">
+        <main class="main">
             <!--First column -->
             <div class="cart-column">
-                <img class="original-image" src="images/original1.jpg" alt="original bun picture">
-                <h2 class="product-name">Original Cinnamon Roll</h2>
-                <h3 class="glaze">Glaze:</h3>
-                <h3 class="quantity">Quantity:</h3>
-                <h3 class="total-price">Total: $2.00</h3>
+                <div class="cart-item">
+                    <img class="original-image cart-item-image" src="images/original1.jpg" alt="original bun picture">
+                    <div class="cart-item-description">
+                        <h2 class="product-name">Original Cinnamon Roll</h2>
+                        <div class="product-attributes">
+                            <div class="product-data">
+                                <div class="product-glaze">
+                                    <span class="glaze product-data-label">Glaze:</span>
+                                    <select name="glaze" id="glaze-dropdown">
+                                        <option value="">None</option>
+                                        <option value="Sugar-milk">Sugar-milk</option>
+                                        <option value="Vanilla-milk">Vanilla-milk</option>
+                                        <option value="Double chocolate">Double-chocolate</option>
+                                    </select>
+                                </div>
+                                <div class="product-quantity">
+                                    <span class="quantity product-data-label">Quantity:</span>
+                                    <select name="quantity" id="quantity-dropdown">
+                                        <option value="1">1 roll</option>
+                                        <option value="3">3 rolls</option>
+                                        <option value="6">6 rolls</option>
+                                        <option value="12">12 rolls</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cart-item-price">
+                                <span class="total-price-header">Total: </span>
+                                <span class="total-price">$<span class="item-price">2.00</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!--Second column for placing payment-->
@@ -45,5 +69,5 @@
                 <h2 class="order-total">Order total: $17.21</h2>
 
             </div>
-        </div>
+        </main>
 

@@ -7,8 +7,10 @@ function listen_button_roll_change() {
     var all_button_rolls = document.querySelectorAll(".button-rolls");
     all_button_rolls.forEach(function (element) {
         element.onclick = function () {
+            // Update quantity and total
             selected_quantity = parseInt(this.getAttribute("data-qty"), 10);
             update_total();
+            // Change highlighed label
             all_button_rolls.forEach(function (roll) {
                 roll.classList.remove("button-roll-active");
             });
@@ -21,11 +23,21 @@ function listen_glazing_change() {
     var all_glazings = document.querySelectorAll(".glazings");
     all_glazings.forEach(function (element) {
         element.onclick = function () {
+            // Update highlighted
             glazing = this.getAttribute("data-glazing");
             all_glazings.forEach(function (roll) {
                 roll.classList.remove("glazings-active");
             });
             this.classList.add("glazings-active");
+
+            // Update product name
+            if (glazing) {
+                document.querySelector(".added-detail").innerHTML = " - " + glazing;
+            } else {
+                document.querySelector(".added-detail").innerHTML = "";
+            }
+
+            // TODO: Update product image
         }
     });
 }

@@ -117,6 +117,7 @@
 
 .carticon {
     padding: 16px;
+    position: relative;
 }
 
 .carticon img{
@@ -129,7 +130,7 @@
     text-decoration: none;
 }
 
-#cart-item-count{
+.cart-icon-item-count{
     color: #FFFFFF;
     font-size: 18px;
     border-radius: 50%;
@@ -138,5 +139,8 @@
     padding: 10px;
     background: #B06B29;
     float: right;
-
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
