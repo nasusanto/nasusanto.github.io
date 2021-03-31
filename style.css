@@ -25,17 +25,6 @@
     align-items: center;
 }
 
-.cart-title{
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    color: rgba(149,73,1,60%);
-    text-align: center;
-    font-size: 48px;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-}
 
 /* change color of navbar links when hovering */
 .links a:hover{
@@ -140,3 +129,14 @@
     text-decoration: none;
 }
 
+#cart-item-count{
+    color: #FFFFFF;
+    font-size: 18px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    padding: 10px;
+    background: #B06B29;
+    float: right;
+
+}
