@@ -1,5 +1,7 @@
 # pui_nadia
 
-Created landing page, menu page, and ordering page.
+Bun Bun bake shop website. 
 
-Extra work I did was creating the about page. All links on the nav bar work though.
+Submitted on March 31 for homework 6A (original deadline)
+
+To go to new cart page, "Original Cinnamon Roll" -> "Buy Now". 
