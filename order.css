@@ -137,8 +137,13 @@ body{
     cursor: pointer;
 }
 
-/* checkout buttons */
 
+.total{
+    color: #954901;
+    font-size: 36px;
+}
+
+/* checkout buttons */
 .add-to-cart{
     font-size: 36px;
     border: 2px solid #b06b29;
